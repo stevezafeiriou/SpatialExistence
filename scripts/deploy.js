@@ -7,7 +7,7 @@ async function main() {
 	console.log("Deploying from:", deployer.address);
 
 	// 2) Read your IPFS folder CID from .env
-	const cid = process.env.BASE_CID;
+	const cid = "bafybeic2li52yxs55y63wvvoffmaaxjz3bmgfpkaclq4ggfn7lednsfswq";
 	// 3) Build the baseURI for metadata (must include ipfs:// + trailing slash)
 	const baseURI = `ipfs://${cid}/`;
 
@@ -19,12 +19,15 @@ async function main() {
 	console.log("NFT deployed at:", nft.address);
 	console.log("baseURI:", baseURI);
 
-	// 6) Mint all four tokens to the deployer
-	for (let i = 1; i <= 4; i++) {
-		const tx = await nft.mint({ value: await nft.mintPrice() });
-		await tx.wait();
-		console.log(` → minted token #${i}`);
-	}
+	// // 6) Mint all four tokens to the deployer
+	// for (let i = 1; i <= 4; i++) {
+	// 	const tx = await nft.mint({ value: await nft.mintPrice() });
+	// 	await tx.wait();
+	// 	console.log(` → minted token #${i}`);
+	// }
+	const tx = await nft.mint({ value: await nft.mintPrice() });
+	await tx.wait();
+	console.log(` → minted token #1`);
 }
 
 main().catch((err) => {
