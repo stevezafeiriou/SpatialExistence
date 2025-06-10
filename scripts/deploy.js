@@ -7,7 +7,7 @@ async function main() {
 	console.log("Deploying from:", deployer.address);
 
 	// 2) Read your IPFS folder CID from .env
-	const cid = "bafybeic2li52yxs55y63wvvoffmaaxjz3bmgfpkaclq4ggfn7lednsfswq";
+	const cid = "your_ipfs_cid_here";
 	// 3) Build the baseURI for metadata (must include ipfs:// + trailing slash)
 	const baseURI = `ipfs://${cid}/`;
 
