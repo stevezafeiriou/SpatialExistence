@@ -1,7 +1,7 @@
 # Spatial Existence NFT
 
 **A 4-token, 3-phase on-chain/ IPFS-hosted NFT drop**  
-Each NFT cycles through **Phase A/B/C** every ~30 days, anchored to deployment.  
+Each NFT cycles through **Phase A/B/C** every ~120 days, anchored to deployment.  
 Includes per-wallet mint cap, configurable mint & claim economics, and owner withdrawal.
 
 **This is not an audited contract. USE IT WITH YOUR OWN RISK!**
