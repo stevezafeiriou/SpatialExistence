@@ -4,6 +4,8 @@
 Each NFT cycles through **Phase A/B/C** every ~30 days, anchored to deployment.  
 Includes per-wallet mint cap, configurable mint & claim economics, and owner withdrawal.
 
+**This is not an audited contract. USE IT WITH YOUR OWN RISK!**
+
 ---
 
 ## Repository Structure
